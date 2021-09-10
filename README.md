@@ -2,7 +2,7 @@
 EFI for Chuwi CoreBookX 14 (i5-8259U) By @weachy & @王刚
 
 ## 当前版本（Version）
-**OpenCore-CoreBookX14-210910**
+**OpenCore-CoreBookX14-210910** （OpenCore 0.7.3）
 
 如果你想了解更多关于 CoreBookX14 黑果玩机技巧，请查阅我的 [知乎专栏](https://www.zhihu.com/column/c_1419721568574013440) （
 If you want to learn more about hackintosh with CoreBookX14. Please visit: My [Zhihu Column](https://www.zhihu.com/column/c_1419721568574013440) ）
