@@ -17,9 +17,10 @@ If you want to learn more about hackintosh with CoreBookX14. Please visit: My [Z
 
 ### 2021-09-10，本次修复问题：
 1. 上一个版本中合盖睡眠在唤醒时偶发内核崩溃的问题
-2. 修复充电状态延迟问题。
+2. 修复充电状态延迟问题
 3. 修复键盘波浪键（~）被映射为（±）的问题
-4. 重新整理 EFI 中，各项不规范的地方，增加稳定性：重新梳理 USB 定制、添加触摸板相关（SSDT-GPI0.aml）、更正操作系统补丁（SSDT-OC-XOSI.aml）、添加 PNLF 重命名等等
+4. 修正 Fn+F10 对应的播放暂停功能
+5. 重新整理 EFI 中，各项不规范的地方，增加稳定性：重新梳理 USB 定制、SSDT方式修改按键映射、完善触摸板相关（SSDT-GPI0.aml）、更正操作系统补丁（SSDT-OC-XOSI.aml）、添加 PNLF 重命名等等
 
 #### 之前所做修复已提交给国光兄弟（详见 [CHUWI-COREBOOK-X-I5-8259U GitHub](https://github.com/sqlsec/CHUWI-COREBOOK-X-I5-8259U) ）
 1. 实现合盖睡眠、开盖自动唤醒（由于 ACPI 不完整，会造成唤醒偶发内核崩溃）
