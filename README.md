@@ -1,13 +1,18 @@
 # CoreBookX-14-Hackintosh
 This is a Simple EFI for Chuwi CoreBookX 14 (i5-8259U)
 
-之前找到国光兄弟一起完善 CoreBookX 的代码，无奈大佬去意已决，挽留未果，后续我会继续维护 CoreBookX 14 的引导。将 EFI 完整梳理了一遍后，发现之前的版本存在很多细节缺漏，现先将几个棘手问题修复做一版更新。
+当前版本：**OpenCore-CoreBookX14-210910**
+
+前言：
+上月联系国光兄弟一起完善 CoreBookX 的代码，无奈大佬去意已决，挽留未果，目前我和 @王刚 在继续维护 CoreBookX 14 的引导，并创建了交流Q群（631070738），欢迎大家加入。
+
+在将 EFI 重新完整梳理一遍之后，发现之前的版本存在很多细节缺漏，现先将几个棘手问题修复做一版更新。
 
 ## 2021-09-10，本次修复问题：
 1. 上一个版本中合盖睡眠在唤醒时偶发内核崩溃的问题
 2. 修复充电状态延迟问题。
 3. 修复键盘波浪键（~）被映射为（±）的问题
-4. 重新整理 EFI 中，各项不规范的地方：重新梳理 USB 定制、添加触摸板相关（SSDT-GPI0.aml）、更正操作系统补丁（SSDT-OC-XOSI.aml）、添加 PNLF 重命名等等
+4. 重新整理 EFI 中，各项不规范的地方，增加稳定性：重新梳理 USB 定制、添加触摸板相关（SSDT-GPI0.aml）、更正操作系统补丁（SSDT-OC-XOSI.aml）、添加 PNLF 重命名等等
 
 ## 之前所做修复已提交给国光兄弟（详见 [CHUWI-COREBOOK-X-I5-8259U GitHub](https://github.com/sqlsec/CHUWI-COREBOOK-X-I5-8259U) ）
 1. 实现合盖睡眠、开盖自动唤醒（由于 ACPI 不完整，会造成唤醒偶发内核崩溃）
