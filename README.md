@@ -29,6 +29,15 @@ If you want to learn more about hackintosh with CoreBookX14. Please visit: My [Z
 
 在将 EFI 重新完整梳理一遍之后，发现之前的版本存在很多细节缺漏，现先将若干棘手问题修复做一版更新。
 
+## BIOS 设置（BIOS Settings）
+- 「Advanced」-「CPU Configuration」-「Software Guard Extensions（SGX）」-「Disabled」
+- 「Advanced」-「Power Management Control」-「CPU Lock Configuration」-「CFG Lock」-「Disabled」
+- 「Advanced」-「Platform Settings」-「Charging Method」-「Fast Charging」
+- 「Advanced」-「AMI Graphic output Protocol Policy」-「Output Select」-「EDP1」  
+   * For external display users only / 此选项仅限外接显示器的用户：外接显示器进入BIOS，切将此选项切到外接屏再切回 EDP1，可以解决外接显示器开机进桌面内屏黑屏的问题。
+- 「Chipset」-「System Agent (SA) Configuration」-「Above 4GB MMID BIOS assignment」-「Enabled」
+- 「Chipset」-「Graphics Configuration」-「DVMT Pre-Allocated」-「64MB」
+- 「Boot」-「Fast Boot」-「Disabled」
 
 ## 更新日志（Change Log）
 
