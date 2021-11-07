@@ -2,7 +2,7 @@
 EFI for Chuwi CoreBookX 14 (i5-8259U) By @weachy & @王刚
 
 ## 当前版本（Version）
-**OpenCore-CoreBookX14-210910** （OpenCore 0.7.3）
+**OpenCore-CoreBookX14-211108** （OpenCore 0.7.5）
 
 如果你想了解更多关于 CoreBookX14 黑果玩机技巧，请查阅我的 [知乎专栏](https://www.zhihu.com/column/c_1419721568574013440) （
 If you want to learn more about hackintosh with CoreBookX14. Please visit: My [Zhihu Column](https://www.zhihu.com/column/c_1419721568574013440) ）
@@ -17,17 +17,17 @@ If you want to learn more about hackintosh with CoreBookX14. Please visit: My [Z
 - **Bluetooth**: 
    - （自带）Intel 7265 (与Wi-Fi共用一根天线，干扰严重) / Realtek 8821CE (无解) 
    - （硬改）Broadcom BCM94360CS2 from Macbook（完美工作)
-- **Audio**: Realtek ALC897 ()
+- **Audio**: Realtek ALC897 
 - **Touchpad**: SYNA3602
 - **Storage**: 512GB Kingston RBUSNS8154P3512GJ M.2 NVME SSD
-- **TF Card Reader**: BayHubTech Integrated SD Controller (无解)
+- **TF Card Reader**: Genesys Mass Storage Device (from Genesys Logic, Inc.)
 - **WebCam**: USB 2.0 Camera (from Sonix Technology Co., Ltd.)
-- **Battery**: 46 Wh Battery
+- **USB-C**: USB Gen1 5GB/s, DP output with 4k 60hz, 45w+ PD Charging
+- **Battery**: 46.2 Wh Battery
 
 ## 前言（Preface）
-上月联系国光兄弟一起完善 CoreBookX 的代码，无奈大佬去意已决，挽留未果，目前我和 @王刚 在继续维护 CoreBookX 14 的引导，并研究出了网卡硬改方案以解决 Apple 生态互联功能以及在此笔记本上 Intel 蓝牙信号奇差等问题。我们创建了一个交流Q群（631070738），欢迎大家加入。
-
-在将 EFI 重新完整梳理一遍之后，发现之前的版本存在很多细节缺漏，现先将若干棘手问题修复做一版更新。
+上月联系国光兄弟一起完善 CoreBookX 的代码，无奈大佬去意已决，挽留未果，目前我和 @王刚 [@maguag](https://github.com/maguag) 在继续维护 CoreBookX 14 的引导。同时我们设计出了一套“硬改方案”，使用 PCB 电路板将板载网卡改装成白果网卡，以解决 Apple 生态互联互通功能（airdrop隔空投送、接力、随航、共享剪切板等）以及在此笔记本上 Intel 蓝牙信号奇差等问题，使得它成为更为完美的黑果选择。
+另外，我们创建了一个QQ交流群（631070738），欢迎大家加入。
 
 ## BIOS 设置（BIOS Settings）
 - 「Advanced」-「CPU Configuration」-「Software Guard Extensions（SGX）」-「Disabled」
@@ -41,7 +41,16 @@ If you want to learn more about hackintosh with CoreBookX14. Please visit: My [Z
 
 ## 更新日志（Change Log）
 
-### 2021-09-10，本次修复问题：
+### 2021-11-08，本次更新内容：
+1. 升级 OpenCore 0.7.5，支持 macOS Monterey
+3. 添加开机音效（duang）
+4. 优化 kext 顺序，删除 NoTouchID.kext
+5. 更新适配 Intel 网卡蓝牙驱动
+6. 驱动 TF 读卡器
+7. 亮度快捷键默认设置为 Fn+F11、Fn+F12
+8. 新增电池补丁、触摸板补丁、以及各种 ACPI 缺失部件（感谢 [@maguag](https://github.com/maguag) @王刚 两位大佬的辛苦付出）
+
+### 2021-09-10，本次更新内容：
 1. 上一个版本中合盖睡眠在唤醒时偶发内核崩溃的问题
 2. 修复充电状态延迟问题
 3. 修复键盘波浪键（~）被映射为（±）的问题
