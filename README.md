@@ -2,7 +2,7 @@
 EFI for Chuwi CoreBookX 14 (i5-8259U) By @weachy & @王刚
 
 ## 当前版本（Version）
-**OpenCore-CoreBookX14-211108** （OpenCore 0.7.5）
+**OpenCore-CoreBookX14-211217** （OpenCore 0.7.6）
 
 如果你想了解更多关于 CoreBookX14 黑果玩机技巧，请查阅我的 [知乎专栏](https://www.zhihu.com/column/c_1419721568574013440) （
 If you want to learn more about hackintosh with CoreBookX14. Please visit: My [Zhihu Column](https://www.zhihu.com/column/c_1419721568574013440) ）
@@ -41,14 +41,19 @@ If you want to learn more about hackintosh with CoreBookX14. Please visit: My [Z
 
 ## 更新日志（Change Log）
 
+### 2021-12-17，本次更新内容：
+1. 升级 OpenCore 0.7.6 正式版，例行升级 Kexts
+2. 处理无法检测到 macOS 12.1 更新的问题
+3. 简化电池补丁、解决 Windows 系统下丢失电池的 BUG
+
 ### 2021-11-08，本次更新内容：
 1. 升级 OpenCore 0.7.5，支持 macOS Monterey
-3. 添加开机音效（duang）
-4. 优化 kext 顺序，删除 NoTouchID.kext
-5. 更新适配 Intel 网卡蓝牙驱动
-6. 驱动 TF 读卡器
-7. 亮度快捷键默认设置为 Fn+F11、Fn+F12
-8. 新增电池补丁、触摸板补丁、以及各种 ACPI 缺失部件（感谢 [@maguag](https://github.com/maguag) @王刚 两位大佬的辛苦付出）
+2. 添加开机音效（duang）
+3. 优化 kext 顺序，删除 NoTouchID.kext
+4. 更新适配 Intel 网卡蓝牙驱动
+5. 驱动 TF 读卡器
+6. 亮度快捷键默认设置为 Fn+F11、Fn+F12
+7. 新增电池补丁、触摸板补丁、以及各种 ACPI 缺失部件（感谢 [@maguag](https://github.com/maguag) @王刚 两位大佬的辛苦付出）
 
 ### 2021-09-10，本次更新内容：
 1. 上一个版本中合盖睡眠在唤醒时偶发内核崩溃的问题
