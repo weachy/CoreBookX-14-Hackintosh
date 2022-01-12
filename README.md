@@ -1,8 +1,11 @@
 # CoreBookX-14-Hackintosh
 EFI for Chuwi CoreBookX 14 (i5-8259U) By @weachy & @王刚
 
+**⚠️** 注意！ 注意！！新上架的 CoreBook X 14 16GB 版本主板大改，不能与之通用，本 EFI 仅适用于旧款！！
+
 ## 当前版本（Version）
 **OpenCore-CoreBookX14-211217** （OpenCore 0.7.6）
+
 
 如果你想了解更多关于 CoreBookX14 黑果玩机技巧，请查阅我的 [知乎专栏](https://www.zhihu.com/column/c_1419721568574013440) （
 If you want to learn more about hackintosh with CoreBookX14. Please visit: My [Zhihu Column](https://www.zhihu.com/column/c_1419721568574013440) ）
@@ -40,6 +43,10 @@ If you want to learn more about hackintosh with CoreBookX14. Please visit: My [Z
 - 「Boot」-「Fast Boot」-「Disabled」
 
 ## 更新日志（Change Log）
+
+### 2022-01-12，本次更新内容：
+1. 升级 OpenCore 0.7.7 正式版，例行升级 Kexts
+2. 解决盒盖休眠问题
 
 ### 2021-12-17，本次更新内容：
 1. 升级 OpenCore 0.7.6 正式版，例行升级 Kexts
