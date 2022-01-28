@@ -1,5 +1,5 @@
 # CoreBookX-14-Hackintosh
-EFI for Chuwi CoreBookX 14 (i5-8259U) By @weachy & @王刚
+EFI for Chuwi CoreBookX 14 (i5-8259U) By @weachy & @王刚 & [@maguag](https://github.com/maguag) .
 
 **⚠️** 注意！ 注意！！新上架的 CoreBook X 14 16GB 版本主板大改，不能与之通用，本 EFI 仅适用于旧款！！
 
@@ -29,8 +29,10 @@ If you want to learn more about hackintosh with CoreBookX14. Please visit: My [Z
 - **Battery**: 46.2 Wh Battery
 
 ## 前言（Preface）
-上月联系国光兄弟一起完善 CoreBookX 的代码，无奈大佬去意已决，挽留未果，目前我和 @王刚 [@maguag](https://github.com/maguag) 在继续维护 CoreBookX 14 的引导。同时我们设计出了一套“硬改方案”，使用 PCB 电路板将板载网卡改装成白果网卡，以解决 Apple 生态互联互通功能（airdrop隔空投送、接力、随航、共享剪切板等）以及在此笔记本上 Intel 蓝牙信号奇差等问题，使得它成为更为完美的黑果选择。
-另外，我们创建了一个QQ交流群（631070738），欢迎大家加入。
+8月份看到国光大佬的视频兴奋不已，遂产生了一起完善 CoreBookX 引导的想法，无奈大佬去意已决，挽留未果，目前我和 @王刚 [@maguag](https://github.com/maguag) 在继续维护和完善 CoreBookX 14 的引导。同时也感谢 [@rboldini](https://github.com/rboldini/CoreBook_X_OC) 为 CHUWI 相关机型黑苹果作出的辛苦贡献。
+
+另外，我们设计出了一套“硬改方案”，使用 PCB 电路板将板载网卡改装成白果网卡，以解决 Apple 生态互联互通功能（airdrop隔空投送、接力、随航、共享剪切板等）以及在此笔记本上 Intel 蓝牙信号奇差等问题，使得它成为更为完美的黑果选择。
+我们创建了QQ交流群 631070738（已满）917681794（请加此新群），欢迎大家加入共同交流完善。
 
 ## BIOS 设置（BIOS Settings）
 - 「Advanced」-「CPU Configuration」-「Software Guard Extensions（SGX）」-「Disabled」
