@@ -51,12 +51,27 @@
 			<key>IOClass</key>
 			<string>org_rehabman_ACPIPoller</string>
 			<key>IONameMatch</key>
-			<string>FAN00000</string>
+			<string>LIDF0001</string>
 			<key>IOProviderClass</key>
 			<string>IOACPIPlatformDevice</string>
 			<key>Methods</key>
 			<array>
-				<string>FCPU</string>
+				<string>LIDF</string>
+			</array>
+		</dict>
+		<key>ACPI Poller 2</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.rehabman.driver.ACPIPoller</string>
+			<key>IOClass</key>
+			<string>org_rehabman_ACPIPoller</string>
+			<key>IONameMatch</key>
+			<string>ADPF0001</string>
+			<key>IOProviderClass</key>
+			<string>IOACPIPlatformDevice</string>
+			<key>Methods</key>
+			<array>
+				<string>ADPF</string>
 			</array>
 		</dict>
 	</dict>
