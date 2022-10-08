@@ -46,6 +46,10 @@ If you want to learn more about hackintosh with CoreBookX14. Please visit: My [Z
 
 ## 更新日志（Change Log）
 
+### 2022-03-17，本次更新内容：
+1. 升级 OpenCore 0.7.9 正式版，例行升级 Kexts
+2. 修改触摸板补丁与 ACPI 轮询的实现
+
 ### 2022-01-12，本次更新内容：
 1. 升级 OpenCore 0.7.7 正式版，例行升级 Kexts
 2. 解决盒盖休眠问题
