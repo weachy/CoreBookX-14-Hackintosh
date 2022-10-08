@@ -1,10 +1,10 @@
 # CoreBookX-14-Hackintosh
 EFI for Chuwi CoreBookX 14 (i5-8259U) By @weachy & @王刚 & [@maguag](https://github.com/maguag) .
 
-**⚠️** 注意！ 注意！！新上架的 CoreBook X 14 16GB 版本主板大改，不能与之通用，本 EFI 仅适用于旧款！！
+**⚠️** 注意！！注意！！2022 年上架的 CoreBook X 14 16GB 版本主板大改，不能与之通用，本 EFI 仅适用于旧款（2021 款）！！
 
 ## 当前版本（Version）
-**OpenCore-CoreBookX14-211217** （OpenCore 0.7.6）
+**OpenCore-CoreBookX14-221008** （OpenCore 0.8.5）
 
 
 如果你想了解更多关于 CoreBookX14 黑果玩机技巧，请查阅我的 [知乎专栏](https://www.zhihu.com/column/c_1419721568574013440) （
@@ -37,7 +37,6 @@ If you want to learn more about hackintosh with CoreBookX14. Please visit: My [Z
 ## BIOS 设置（BIOS Settings）
 - 「Advanced」-「CPU Configuration」-「Software Guard Extensions（SGX）」-「Disabled」
 - 「Advanced」-「Power Management Control」-「CPU Lock Configuration」-「CFG Lock」-「Disabled」
-- 「Advanced」-「Platform Settings」-「Charging Method」-「Fast Charging」
 - 「Advanced」-「AMI Graphic output Protocol Policy」-「Output Select」-「EDP1」  
    * For external display users only / 此选项仅限外接显示器的用户：外接显示器进入BIOS，切将此选项切到外接屏再切回 EDP1，可以解决外接显示器开机进桌面内屏黑屏的问题。
 - 「Chipset」-「System Agent (SA) Configuration」-「Above 4GB MMID BIOS assignment」-「Enabled」
@@ -45,6 +44,9 @@ If you want to learn more about hackintosh with CoreBookX14. Please visit: My [Z
 - 「Boot」-「Fast Boot」-「Disabled」
 
 ## 更新日志（Change Log）
+
+### 2022-10-08，本次更新内容：
+1. 升级 OpenCore 0.8.5 正式版，例行升级 Kexts，支持 macOS Ventura
 
 ### 2022-03-17，本次更新内容：
 1. 升级 OpenCore 0.7.9 正式版，例行升级 Kexts
