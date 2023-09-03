@@ -4,7 +4,7 @@ EFI for Chuwi CoreBookX 14 (i5-8259U) By @weachy & @王刚 & [@maguag](https://g
 **⚠️** 注意！！注意！！2022 年上架的 CoreBook X 14 16GB 版本主板大改，不能与之通用，本 EFI 仅适用于旧款（2021 款）！！
 
 ## 当前版本（Version）
-**OpenCore-CoreBookX14-221008** （OpenCore 0.8.5）
+**OpenCore-CoreBookX14-230903** （OpenCore 0.9.4）
 
 
 如果你想了解更多关于 CoreBookX14 黑果玩机技巧，请查阅我的 [知乎专栏](https://www.zhihu.com/column/c_1419721568574013440) （
