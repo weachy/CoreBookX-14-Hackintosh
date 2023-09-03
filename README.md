@@ -45,7 +45,7 @@ If you want to learn more about hackintosh with CoreBookX14. Please visit: My [Z
 
 ## 更新日志（Change Log）
 
-### 2022-10-08，本次更新内容：
+### 2023-09-03，本次更新内容：
 1. 升级 OpenCore 0.9.4 正式版，例行升级 Kexts，支持 macOS Sonoma Beta
 
 ### 2022-10-08，本次更新内容：
